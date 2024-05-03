@@ -8,7 +8,7 @@ You can install the package via npm:
 
 ```bash
 npm install @sanketm09/search_in_array
-
+```
 
 ## Usage
 
