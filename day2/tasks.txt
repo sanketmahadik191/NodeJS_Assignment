@@ -1,0 +1,14 @@
+[
+    {
+        "task": "joker",
+        "completed": false
+    },
+    {
+        "task": "bokk",
+        "completed": true
+    },
+    {
+        "task": "Play chess",
+        "completed": true
+    }
+]
