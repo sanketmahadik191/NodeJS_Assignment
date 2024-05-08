@@ -16,7 +16,6 @@ function saveTasks(tasks) {
     fs.writeFileSync(filePath, JSON.stringify(tasks, null, 4), 'utf8');
 }
 
-// Function to add a new task
 function addTask(task) {
     const tasks = loadTasks();
     tasks.push({ task, completed: false });

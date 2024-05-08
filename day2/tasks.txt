@@ -1,14 +1,10 @@
 [
     {
-        "task": "joker",
+        "task": "Play chess",
         "completed": false
     },
     {
-        "task": "bokk",
-        "completed": true
-    },
-    {
-        "task": "Play chess",
+        "task": "Read book",
         "completed": true
     }
 ]
