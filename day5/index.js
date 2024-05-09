@@ -16,7 +16,7 @@ const headers= {
 const fetchJoke = async () => {
   try {
     const response = await axios.get(url,{headers});
-    console.log(response);
+    console.log("Random Joke - "+response.data);
     return response.data;
   } catch (error) {
     console.error(error);
