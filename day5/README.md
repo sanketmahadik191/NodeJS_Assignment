@@ -34,6 +34,9 @@ Express.js is used to create a server and define routes for the API endpoints.
 
 Functional testing of the API endpoints can be performed using tools like Postman or similar HTTP client applications. The `/api/jokes/random` endpoint can be tested by sending GET requests to the server and verifying that random jokes are returned in the response.
 
+![image](https://github.com/sanketmahadik191/NodeJS_Assignment/assets/125791466/a8e8d419-b893-4729-8e8a-85a85828a74a)
+
+
 ## Challenges Encountered
 
 1. **Handling Asynchronous Operations**: Managing asynchronous operations in Node.js, especially when making HTTP requests, required careful handling of promises and async/await syntax.
