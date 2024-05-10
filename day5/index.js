@@ -2,6 +2,7 @@ const express = require("express");
 const axios = require("axios");
 const PORT = 4001;
 const server = express();
+const fs = require('fs');
 
 server.listen(PORT, () => {
   console.log('Express Server Started');
@@ -27,6 +28,8 @@ const fetchJoke = async () => {
 server.get("/api/jokes/random", async (request, response) => {
   try {
     const jokeData = await fetchJoke();
+    const jokesData = "\n"+jokeData;
+    fs.appendFileSync('randomJoke.txt',jokesData)
     response.status(200).json(jokeData);
   } catch (err) {
     console.log("Error_Occured -" + err);

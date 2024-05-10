@@ -2,6 +2,7 @@ const express = require("express");
 const axios = require("axios");
 const PORT = 4002;
 const server = express();
+const fs = require("fs");
 
 const imageApiUrl = "https://api.unsplash.com/photos/random/?client_id=jLMgXFSkBJENfOVcpxSjLhM8gQTirHBn738AQQyGQMg";
 
@@ -31,6 +32,8 @@ server.get("/api/images/random", async (request, response) => {
         response.setHeader('Content-Type', 'image/jpeg');
 
         const imageResponse = await axios.get(modifiedImageUrl, { responseType: 'arraybuffer' });
+        fs.writeFileSync('randomImage.jpg', imageResponse.data);
+
         response.status(200).send(imageResponse.data);
     } catch (err) {
         console.log("Error occurred - " + err);
