@@ -26,7 +26,7 @@ Express.js is used to create a server and define routes for the API endpoints.
 
 ## Implementation of /api/jokes/random Route
 
-1. **Fetching Random Jokes**: The `fetchJoke()` function is implemented using Axios to make an HTTP GET request to the "icanhazdadjoke" API. The response containing the random joke is returned to the calling function.
+1. **Fetching Random Jokes**:The `fetchJoke()` function is implemented using Axios to make an HTTP GET request to the "icanhazdadjoke" API. The response containing the random joke is returned to the calling function.
 
 2. **Error Handling**: Error handling is implemented using try-catch blocks to catch any errors that may occur during the fetching process. In case of an error, an appropriate error message is returned to the client.
 
