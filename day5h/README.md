@@ -2,6 +2,10 @@
 
 This project is a simple API built using Express.js and Axios to fetch a random image from the Unsplash API and resize it based on user-defined dimensions.
 
+## Result 
+  ![image](https://github.com/sanketmahadik191/NodeJS_Assignment/assets/125791466/317f52f6-4347-4378-82fb-d370d0bde8c3)
+
+
 ## Functionality
 
 The project consists of the following components:
