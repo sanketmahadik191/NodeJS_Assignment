@@ -7,7 +7,7 @@ const fs = require("fs");
 const imageApiUrl = "https://api.unsplash.com/photos/random/?client_id=jLMgXFSkBJENfOVcpxSjLhM8gQTirHBn738AQQyGQMg";
 
 server.listen(PORT, () => {
-    console.log('Express Server Started');
+    console.log('Express Server');
 });
 
 const fetchImage = async () => {
@@ -24,7 +24,7 @@ server.get("/api/images/random", async (request, response) => {
     try {
         const imageUrl = await fetchImage();
 
-        const width = 300;
+        const width = 301;
         const height = 400;
 
         const modifiedImageUrl = `${imageUrl}&w=${width}&h=${height}`;
