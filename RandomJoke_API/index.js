@@ -37,7 +37,6 @@ server.get("/api/jokes/random", async (request, response) => {
   }
 });
 
-server.use((req,res)=>{
-    console.error(err.stack);
-    res.status(500).send('Check Url');
-})
+server.use((req, res) => {
+  res.status(404).send("Not Found");
+});

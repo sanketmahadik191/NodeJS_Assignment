@@ -40,3 +40,7 @@ server.get("/api/images/random", async (request, response) => {
         response.status(500).send("Internal Server Error");
     }
 });
+
+server.use((req, res) => {
+    res.status(404).send("Not Found");
+});
